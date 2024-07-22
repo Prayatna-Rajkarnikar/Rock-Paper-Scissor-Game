@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Game</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+    <div class="main">
+        <div class="heading">
+            <h1>Rock Paper Scissors </h1>
+        </div>
+        <!-- Container for the buttons that allow the user to make a choice -->
+        <div class="buttons">
+            <button onclick="makeChoice('rock')"> 🪨Rock</button>
+            <button onclick="makeChoice('paper')"> 📃Paper</button>
+            <button onclick="makeChoice('scissors')"> ✂️Scissors</button>
+        </div>
+        <!-- Container for displaying the computer's choice -->
+        <div id="computerContainer" class="choiceBox">
+            <p id="compChoice">Computer chose:</p>
+        </div>
+        <!-- Container for displaying the result of the game -->
+        <div class="result">
+            <p id="gameResult"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
